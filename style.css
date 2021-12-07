@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/churchbgg.jpg);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+
+}
+.header h1{
+  font-size: 30px;
+  color: #ffffff;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%, 6%;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+  padding: 2% 6%;
+
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: #ffffff;
+  text-decoration: none;
+
+}
+.nav-links ul li::after{
+  content: "";
+  width: 0%;
+  background: #f44336;
+  height: 2px;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+
+  width: 100%;
+}
+.textbox{
+  color: #ffffff;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  
+}
+.textbox h2{
+  font-size: 62px;
+}
+.textbox p{
+  font-size: 15px;
+}
+
+
+.hero-btn{
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover{
+  transition: 1s;
+  border: 1px solid #f44336;
+  background: #f44336;
+  
+}
